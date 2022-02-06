@@ -21,8 +21,6 @@ import { activityRoute } from './activity';
 import { feedbackRoute } from './feedback';
 import { lectureRoute } from './event';
 import { lecturesRoute } from './events';
-import { jwtRoute } from './jwt';
-import { userRoute } from './user';
 import { repositoryRoute } from './repository';
 import { opportunitiesRoute } from './opportunities';
 import { interviewQuestionRoute } from './interviewQuestion';
@@ -70,8 +68,6 @@ export const routesMiddleware: RoutesMiddleware = (logger: ILogger) => {
 
   applyRouter(router, lectureRoute(logger));
   applyRouter(router, lecturesRoute(logger));
-  applyRouter(router, jwtRoute(logger));
-  applyRouter(router, userRoute(logger));
   applyRouter(router, repositoryRoute(logger));
   applyRouter(router, opportunitiesRoute(logger));
 
