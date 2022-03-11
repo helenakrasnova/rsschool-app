@@ -17,6 +17,7 @@ import { UsersModule } from './users';
 import { CertificatesModule } from './certificates/certificates.module';
 import { DiscordServersModule } from './discord-servers/discord-servers.module';
 import { OpportunitiesModule } from './opportunities/opportunities.module';
+import { ScheduleModule } from './schedule/schedule.module';
 
 @Module({
   imports: [
@@ -39,6 +40,7 @@ import { OpportunitiesModule } from './opportunities/opportunities.module';
     CertificatesModule,
     DiscordServersModule,
     OpportunitiesModule,
+    ScheduleModule,
   ],
   controllers: [],
   providers: [Logger, ConfigService],
